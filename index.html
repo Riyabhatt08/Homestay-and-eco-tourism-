@@ -1,92 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homestay & Eco Tourism</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homestay & Eco Tourism</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
 
-    <!-- Navbar -->
-    <nav class="bg-green-700 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Trishul Eco Tourism</h1>
-            <ul class="flex gap-6">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#rooms">Rooms</a></li>
-                <li><a href="#tourism">Tourism</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Homestay & Eco Tourism</h1>
 
-    <!-- Hero Section -->
-    <section id="home" class="text-center py-20 bg-green-200">
-        <h2 class="text-4xl font-bold mb-4">
-            Welcome to Homestay & Eco Tourism
-        </h2>
-        <p class="text-lg">
-            Experience Nature, Adventure and Local Culture
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#rooms" class="hover:text-yellow-300">Rooms</a></li>
+        <li><a href="#tourism" class="hover:text-yellow-300">Tourism</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-green-200 py-20 text-center">
+    <h2 class="text-5xl font-bold mb-4">
+      Welcome to Homestay & Eco Tourism
+    </h2>
+
+    <p class="text-xl text-gray-700">
+      Experience Nature, Adventure and Local Culture
+    </p>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="container mx-auto py-12 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+      Our Rooms
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Deluxe Room -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-2xl font-bold mb-2">Deluxe Room</h3>
+
+        <p class="text-gray-600 mb-4">
+          Comfortable room with mountain views.
         </p>
-    </section>
 
-    <!-- Rooms Section -->
-    <section id="rooms" class="container mx-auto py-12">
-        <h2 class="text-3xl font-bold text-center mb-8">
-            Our Rooms
-        </h2>
+        <p class="font-semibold mb-4">
+          ₹2500 / Night
+        </p>
 
-        <div class="grid md:grid-cols-2 gap-6">
+        <button
+          onclick="showRoomDetails('Deluxe Room','₹2500 / Night','Free WiFi, Breakfast Included, Mountain View')"
+          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+          View Details
+        </button>
+      </div>
 
-            <div class="bg-white p-6 rounded-xl shadow-lg">
-                <h3 class="text-2xl font-bold mb-2">Deluxe Room</h3>
-                <p class="text-gray-600 mb-4">₹2500 / Night</p>
-                <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
-                    View Details
-                </button>
-            </div>
+      <!-- Family Room -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-2xl font-bold mb-2">Family Room</h3>
 
-            <div class="bg-white p-6 rounded-xl shadow-lg">
-                <h3 class="text-2xl font-bold mb-2">Family Room</h3>
-                <p class="text-gray-600 mb-4">₹3500 / Night</p>
-                <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
-                    View Details
-                </button>
-            </div>
+        <p class="text-gray-600 mb-4">
+          Spacious room for family stays.
+        </p>
 
+        <p class="font-semibold mb-4">
+          ₹3500 / Night
+        </p>
+
+        <button
+          onclick="showRoomDetails('Family Room','₹3500 / Night','4 Beds, Balcony, Breakfast Included')"
+          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+          View Details
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tourism Section -->
+  <section id="tourism" class="bg-white py-12">
+    <div class="container mx-auto px-4">
+
+      <h2 class="text-3xl font-bold text-center mb-8">
+        Eco Tourism Activities
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-green-100 p-6 rounded-xl shadow">
+          🥾 Trekking
         </div>
-    </section>
 
-    <!-- Tourism Activities -->
-    <section id="tourism" class="bg-white py-12">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-8">
-                Eco Tourism Activities
-            </h2>
-
-            <ul class="space-y-3 text-lg text-center">
-                <li>🥾 Trekking to Tungnath</li>
-                <li>🌲 Nature Walks</li>
-                <li>🏕️ Camping</li>
-                <li>🔥 Bonfire Nights</li>
-                <li>🍲 Traditional Uttarakhand Food</li>
-            </ul>
+        <div class="bg-green-100 p-6 rounded-xl shadow">
+          🌲 Nature Walks
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="container mx-auto py-12 text-center">
-        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-        <p>Email: info@trishulecotourism.com</p>
-        <p>Phone: +91 9876543210</p>
-    </section>
+        <div class="bg-green-100 p-6 rounded-xl shadow">
+          🏕️ Camping
+        </div>
 
-    <!-- Footer -->
-    <footer class="bg-green-700 text-white text-center p-4">
-        <p>© 2026 Trishul Eco Tourism. All Rights Reserved.</p>
-    </footer>
+        <div class="bg-green-100 p-6 rounded-xl shadow">
+          🔥 Bonfire Nights
+        </div>
+
+        <div class="bg-green-100 p-6 rounded-xl shadow">
+          🍲 Traditional Food
+        </div>
+
+        <div class="bg-green-100 p-6 rounded-xl shadow">
+          📸 Photography Tours
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto py-12 text-center">
+
+    <h2 class="text-3xl font-bold mb-6">
+      Contact Us
+    </h2>
+
+    <p>Email: info@ecotourism.com</p>
+    <p>Phone: +91 9876543210</p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4">
+    <p>© 2026 Homestay & Eco Tourism. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showRoomDetails(room, price, facilities) {
+      alert(
+        "Room: " + room +
+        "\nPrice: " + price +
+        "\nFacilities: " + facilities
+      );
+    }
+  </script>
 
 </body>
 </html>
