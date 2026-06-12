@@ -3,98 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trishul Eco Homestays</title>
+    <title>Homestay & Eco Tourism</title>
 
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <!-- Header -->
-    <header>
-        <h1>🏔️ Trishul Eco-Homestays</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#tourism">Eco Tourism</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="bg-green-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Trishul Eco Tourism</h1>
+            <ul class="flex gap-6">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#tourism">Tourism</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h2>Experience Nature & Himalayan Hospitality</h2>
-        <p>
-            Discover the beauty of Chopta, Uttarakhand with eco-friendly
-            homestays and unforgettable tourism experiences.
-        </p>
-
-        <button onclick="bookNow()">Book Now</button>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-        <h2>About Us</h2>
-
-        <p>
-            Trishul Eco-Homestays provides comfortable accommodation,
-            local cuisine, village experiences, trekking adventures,
-            and eco-tourism activities in the heart of Uttarakhand.
+    <section id="home" class="text-center py-20 bg-green-200">
+        <h2 class="text-4xl font-bold mb-4">
+            Welcome to Homestay & Eco Tourism
+        </h2>
+        <p class="text-lg">
+            Experience Nature, Adventure and Local Culture
         </p>
     </section>
 
-    <!-- Rooms -->
-    <section id="rooms">
-        <h2>Our Rooms</h2>
+    <!-- Rooms Section -->
+    <section id="rooms" class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">
+            Our Rooms
+        </h2>
 
-        <div class="room-card">
-            <h3>Standard Room</h3>
-            <p>₹1500 / Night</p>
-            <button>View Details</button>
-        </div>
+        <div class="grid md:grid-cols-2 gap-6">
 
-        <div class="room-card">
-            <h3>Deluxe Room</h3>
-            <p>₹2500 / Night</p>
-            <button>View Details</button>
-        </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2">Deluxe Room</h3>
+                <p class="text-gray-600 mb-4">₹2500 / Night</p>
+                <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
+                    View Details
+                </button>
+            </div>
 
-        <div class="room-card">
-            <h3>Family Room</h3>
-            <p>₹3500 / Night</p>
-            <button>View Details</button>
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-2">Family Room</h3>
+                <p class="text-gray-600 mb-4">₹3500 / Night</p>
+                <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
+                    View Details
+                </button>
+            </div>
+
         </div>
     </section>
 
-    <!-- Eco Tourism -->
-    <section id="tourism">
-        <h2>Eco Tourism Activities</h2>
+    <!-- Tourism Activities -->
+    <section id="tourism" class="bg-white py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Eco Tourism Activities
+            </h2>
 
-        <ul>
-            <li>🥾 Trekking to Tungnath</li>
-            <li>🌲 Nature Walks</li>
-            <li>🏕️ Camping</li>
-            <li>🔥 Bonfire Nights</li>
-            <li>🍲 Traditional Uttarakhand Food</li>
-            <li>🐦 Bird Watching</li>
-        </ul>
+            <ul class="space-y-3 text-lg text-center">
+                <li>🥾 Trekking to Tungnath</li>
+                <li>🌲 Nature Walks</li>
+                <li>🏕️ Camping</li>
+                <li>🔥 Bonfire Nights</li>
+                <li>🍲 Traditional Uttarakhand Food</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-
-        <p>Email: trishuleco@gmail.com</p>
+    <section id="contact" class="container mx-auto py-12 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p>Email: info@trishulecotourism.com</p>
         <p>Phone: +91 9876543210</p>
-        <p>Location: Chopta, Uttarakhand</p>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2026 Trishul Eco-Homestays & Eco Tourism</p>
+    <footer class="bg-green-700 text-white text-center p-4">
+        <p>© 2026 Trishul Eco Tourism. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 
 </body>
 </html>
