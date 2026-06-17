@@ -4,168 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homestay & Eco Tourism</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="bg-gray-100">
+<body class="bg-green-50">
 
   <!-- Navbar -->
   <nav class="bg-green-700 text-white p-4">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Homestay & Eco Tourism</h1>
 
-      <ul class="flex gap-6">
+      <ul class="flex space-x-6">
         <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-300">About</a></li>
         <li><a href="#rooms" class="hover:text-yellow-300">Rooms</a></li>
         <li><a href="#tourism" class="hover:text-yellow-300">Tourism</a></li>
+        <li><a href="#booking" class="hover:text-yellow-300">Booking</a></li>
         <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="bg-green-200 py-20 text-center">
-    <h2 class="text-5xl font-bold mb-4">
+  <!-- Home -->
+  <section id="home" class="text-center py-20 bg-green-100">
+    <h2 class="text-4xl font-bold text-green-800">
       Welcome to Homestay & Eco Tourism
     </h2>
+    <p class="mt-4 text-gray-700">
+      Explore beautiful destinations and enjoy eco-friendly stays.
+    </p>
 
-    <p class="text-xl text-gray-700">
-      Experience Nature, Adventure and Local Culture
+    <button class="mt-6 bg-green-700 text-white px-6 py-3 rounded-lg">
+      Explore Now
+    </button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-8 bg-white">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-6">
+      About Us
+    </h2>
+
+    <p class="text-center text-gray-700 max-w-3xl mx-auto">
+      Homestay & Eco Tourism is a platform that promotes sustainable
+      tourism and comfortable homestays. We provide eco-friendly travel
+      experiences and support local communities while preserving nature
+      and culture.
     </p>
   </section>
 
-  <!-- Rooms Section -->
-  <section id="rooms" class="container mx-auto py-12 px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">
+  <!-- Rooms -->
+  <section id="rooms" class="py-16 bg-green-100">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-10">
       Our Rooms
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-8">
+    <div class="grid md:grid-cols-3 gap-6 px-10">
 
-      <!-- Deluxe Room -->
-      <div class="bg-white rounded-xl shadow-lg p-6">
-        <h3 class="text-2xl font-bold mb-2">Deluxe Room</h3>
-
-        <p class="text-gray-600 mb-4">
-          Comfortable room with mountain views.
-        </p>
-
-        <p class="font-semibold mb-4">
-          ₹2500 / Night
-        </p>
-
-        <button
-          onclick="showRoomDetails('Deluxe Room','₹2500 / Night','Free WiFi, Breakfast Included, Mountain View')"
-          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
-          View Details
-        </button>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Deluxe Room</h3>
+        <p class="mt-2">Comfortable room with beautiful mountain view.</p>
+        <p class="font-bold mt-3">₹2000 / Night</p>
       </div>
-<!-- Booking Section -->
-<section id="booking" class="py-12 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Book Your Stay</h2>
 
-    <form class="bg-white p-6 rounded-lg shadow-md grid md:grid-cols-2 gap-4">
-      <input type="text" placeholder="Full Name" class="border p-3 rounded">
-      <input type="email" placeholder="Email" class="border p-3 rounded">
-      <input type="date" class="border p-3 rounded">
-      <input type="date" class="border p-3 rounded">
-      <input type="number" placeholder="Guests" class="border p-3 rounded md:col-span-2">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Family Room</h3>
+        <p class="mt-2">Spacious room suitable for family stay.</p>
+        <p class="font-bold mt-3">₹3500 / Night</p>
+      </div>
 
-      <button class="bg-green-700 text-white py-3 rounded md:col-span-2">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Luxury Cottage</h3>
+        <p class="mt-2">Private cottage surrounded by nature.</p>
+        <p class="font-bold mt-3">₹5000 / Night</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tourism -->
+  <section id="tourism" class="py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-10">
+      Eco Tourism Activities
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6 px-10">
+
+      <div class="bg-green-100 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Nature Walk</h3>
+        <p>Enjoy peaceful walks in natural surroundings.</p>
+      </div>
+
+      <div class="bg-green-100 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Camping</h3>
+        <p>Experience eco-friendly camping adventures.</p>
+      </div>
+
+      <div class="bg-green-100 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Local Culture</h3>
+        <p>Discover traditions, food and local heritage.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-16 bg-green-100">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-8">
+      Book Your Stay
+    </h2>
+
+    <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow">
+
+      <input
+        type="text"
+        placeholder="Full Name"
+        class="w-full border p-3 mb-4 rounded"
+      >
+
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full border p-3 mb-4 rounded"
+      >
+
+      <input
+        type="date"
+        class="w-full border p-3 mb-4 rounded"
+      >
+
+      <input
+        type="number"
+        placeholder="Number of Guests"
+        class="w-full border p-3 mb-4 rounded"
+      >
+
+      <button
+        class="bg-green-700 text-white px-6 py-3 rounded-lg w-full">
         Book Now
       </button>
+
     </form>
-  </div>
-</section>
-      <!-- Family Room -->
-      <div class="bg-white rounded-xl shadow-lg p-6">
-        <h3 class="text-2xl font-bold mb-2">Family Room</h3>
-
-        <p class="text-gray-600 mb-4">
-          Spacious room for family stays.
-        </p>
-
-        <p class="font-semibold mb-4">
-          ₹3500 / Night
-        </p>
-
-        <button
-          onclick="showRoomDetails('Family Room','₹3500 / Night','4 Beds, Balcony, Breakfast Included')"
-          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
-          View Details
-        </button>
-      </div>
-
-    </div>
   </section>
 
-  <!-- Tourism Section -->
-  <section id="tourism" class="bg-white py-12">
-    <div class="container mx-auto px-4">
-
-      <h2 class="text-3xl font-bold text-center mb-8">
-        Eco Tourism Activities
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-6">
-
-        <div class="bg-green-100 p-6 rounded-xl shadow">
-          🥾 Trekking
-        </div>
-
-        <div class="bg-green-100 p-6 rounded-xl shadow">
-          🌲 Nature Walks
-        </div>
-
-        <div class="bg-green-100 p-6 rounded-xl shadow">
-          🏕️ Camping
-        </div>
-
-        <div class="bg-green-100 p-6 rounded-xl shadow">
-          🔥 Bonfire Nights
-        </div>
-
-        <div class="bg-green-100 p-6 rounded-xl shadow">
-          🍲 Traditional Food
-        </div>
-
-        <div class="bg-green-100 p-6 rounded-xl shadow">
-          📸 Photography Tours
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="container mx-auto py-12 text-center">
-
-    <h2 class="text-3xl font-bold mb-6">
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center text-green-800 mb-8">
       Contact Us
     </h2>
 
-    <p>Email: info@ecotourism.com</p>
-    <p>Phone: +91 9876543210</p>
-
+    <div class="text-center">
+      <p>Email: info@homestay.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: Uttarakhand, India</p>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-green-700 text-white text-center p-4">
     <p>© 2026 Homestay & Eco Tourism. All Rights Reserved.</p>
   </footer>
-
-  <script>
-    function showRoomDetails(room, price, facilities) {
-      alert(
-        "Room: " + room +
-        "\nPrice: " + price +
-        "\nFacilities: " + facilities
-      );
-    }
-  </script>
 
 </body>
 </html>
