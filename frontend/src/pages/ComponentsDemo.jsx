@@ -10,23 +10,80 @@ function ComponentsDemo() {
   return (
     <div
       style={{
-        padding: "30px",
-        display: "flex",
-        flexDirection: "column",
-        gap: "20px",
+        padding: "40px",
+        background: "#1e293b",
+        minHeight: "100vh",
+        color: "white",
       }}
     >
-      <h2>UI Components Demo</h2>
+      <h1
+        style={{
+          textAlign: "center",
+          color: "#22c55e",
+          marginBottom: "30px",
+        }}
+      >
+        UI Components Showcase
+      </h1>
 
-      <Button text="Book Now" />
+      <div
+        style={{
+          background: "#334155",
+          padding: "20px",
+          borderRadius: "10px",
+          marginBottom: "20px",
+        }}
+      >
+        <h2>Button Component</h2>
+        <Button text="Click Me" />
+      </div>
 
-      <Input placeholder="Enter your name" />
+      <div
+        style={{
+          background: "#334155",
+          padding: "20px",
+          borderRadius: "10px",
+          marginBottom: "20px",
+        }}
+      >
+        <h2>Input Component</h2>
+        <Input placeholder="Enter your name" />
+      </div>
 
-      <Modal title="Welcome Modal" />
+      <div
+        style={{
+          background: "#334155",
+          padding: "20px",
+          borderRadius: "10px",
+          marginBottom: "20px",
+        }}
+      >
+        <h2>Modal Component</h2>
+        <Modal title="Welcome Modal" />
+      </div>
 
-      <Toast message="Booking Successful!" />
+      <div
+        style={{
+          background: "#334155",
+          padding: "20px",
+          borderRadius: "10px",
+          marginBottom: "20px",
+        }}
+      >
+        <h2>Toast Component</h2>
+        <Toast message="Booking Successful!" />
+      </div>
 
-      <Loader />
+      <div
+        style={{
+          background: "#334155",
+          padding: "20px",
+          borderRadius: "10px",
+        }}
+      >
+        <h2>Loader Component</h2>
+        <Loader />
+      </div>
     </div>
   );
 }

@@ -1,13 +1,15 @@
+/**
+ * Hero component
+ * Displays the main banner section.
+ */
 function Hero() {
   return (
-    <section className="hero">
-      <h1>Welcome to Trishul Eco Tourism</h1>
+    <section className="text-center py-20">
+      <h1 className="text-5xl font-bold">EcoStay</h1>
+      <p>Discover eco-friendly homestays.</p>
 
-      <p>
-        Discover eco-friendly stays and sustainable travel experiences.
-      </p>
-
-      <button>Explore Now</button>
+      <button>Book Now</button>
+      <button>Explore More</button>
     </section>
   );
 }

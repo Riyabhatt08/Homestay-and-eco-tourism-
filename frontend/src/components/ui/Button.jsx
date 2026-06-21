@@ -1,18 +1,14 @@
-/**
- * Button component
- * Props:
- * - text: button text
- */
-
 function Button({ text }) {
   return (
     <button
+      onClick={() => alert("Button Clicked!")}
       style={{
         padding: "10px 20px",
-        background: "#22c55e",
+        background: "green",
         color: "white",
         border: "none",
         borderRadius: "8px",
+        cursor: "pointer",
       }}
     >
       {text}

@@ -1,45 +1,19 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Card from "./components/Card";
-import Footer from "./components/Footer";
-import ComponentsDemo from "./pages/ComponentsDemo";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Dashboard from "./pages/Dashboard";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <>
-      <Navbar />
-
-      <Hero />
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "20px",
-          flexWrap: "wrap",
-          marginTop: "30px",
-        }}
-      >
-        <Card
-          title="Eco Stay"
-          description="Stay close to nature."
-        />
-
-        <Card
-          title="Adventure Tours"
-          description="Explore mountains and forests."
-        />
-
-        <Card
-          title="Local Culture"
-          description="Experience village life."
-        />
-      </div>
-
-      <Footer />
-      <ComponentsDemo />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
