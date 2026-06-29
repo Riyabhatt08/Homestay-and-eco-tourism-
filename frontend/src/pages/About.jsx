@@ -4,53 +4,89 @@ import Footer from "../components/Footer";
 function About() {
   return (
     <>
-      <Navbar />
 
-      <div style={{ padding: "40px", maxWidth: "1000px", margin: "auto" }}>
-        <h1>About Trishul Eco Tourism</h1>
+      <div
+        style={{
+          padding: "60px 20px",
+          textAlign: "center",
+          minHeight: "70vh",
+          backgroundColor: "#f4f8f4",
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "48px",
+            color: "green",
+            marginBottom: "20px",
+          }}
+        >
+          About EcoStay
+        </h1>
 
-        <p>
-          Trishul Eco Tourism is dedicated to promoting sustainable and
-          eco-friendly travel experiences. Our mission is to connect people
-          with nature while preserving the environment and supporting local
-          communities.
+        <p
+          style={{
+            maxWidth: "900px",
+            margin: "auto",
+            fontSize: "22px",
+            lineHeight: "1.8",
+            color: "#444",
+          }}
+        >
+          EcoStay is an eco-tourism platform that helps travelers discover
+          beautiful mountain stays, forest cottages, and lakeside homestays.
+          Our goal is to promote sustainable tourism and support local
+          communities while providing unforgettable travel experiences.
         </p>
 
-        <p>
-          We provide comfortable eco stays, adventure tours, trekking
-          experiences, and opportunities to explore the rich culture and
-          traditions of local villages. Our tourism activities are designed
-          to minimize environmental impact while creating memorable
-          experiences for visitors.
-        </p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "30px",
+            flexWrap: "wrap",
+            marginTop: "50px",
+          }}
+        >
+          <div
+            style={{
+              width: "250px",
+              padding: "25px",
+              background: "white",
+              borderRadius: "10px",
+              boxShadow: "0 0 10px rgba(0,0,0,0.2)",
+            }}
+          >
+            <h2>🌿 Mission</h2>
+            <p>Promoting sustainable and eco-friendly tourism.</p>
+          </div>
 
-        <p>
-          Our goal is to encourage responsible tourism that preserves
-          forests, mountains, rivers, and wildlife for future generations.
-          Visitors can enjoy natural beauty while contributing to the
-          development of rural communities.
-        </p>
+          <div
+            style={{
+              width: "250px",
+              padding: "25px",
+              background: "white",
+              borderRadius: "10px",
+              boxShadow: "0 0 10px rgba(0,0,0,0.2)",
+            }}
+          >
+            <h2>🏔 Vision</h2>
+            <p>Connecting travelers with nature and local communities.</p>
+          </div>
 
-        <h2>Our Services</h2>
-
-        <ul>
-          <li>Eco-friendly accommodation</li>
-          <li>Adventure and trekking tours</li>
-          <li>Village and cultural experiences</li>
-          <li>Nature exploration programs</li>
-          <li>Local guide support</li>
-        </ul>
-
-        <h2>Our Vision</h2>
-
-        <p>
-          We aim to become a trusted eco-tourism platform that inspires
-          people to travel responsibly, respect nature, and support local
-          communities while enjoying unique travel experiences.
-        </p>
+          <div
+            style={{
+              width: "250px",
+              padding: "25px",
+              background: "white",
+              borderRadius: "10px",
+              boxShadow: "0 0 10px rgba(0,0,0,0.2)",
+            }}
+          >
+            <h2>🌍 Values</h2>
+            <p>Nature conservation, local culture, and responsible travel.</p>
+          </div>
+        </div>
       </div>
-
-      <Footer />
     </>
   );
 }

@@ -1,20 +1,31 @@
-/**
- * Navbar component
- * Displays navigation links.
- */
-function Navbar() {
+import { Link } from "react-router-dom";
+
+function Navbar({ darkMode, setDarkMode }) {
   return (
-    <nav className="flex justify-between p-4 bg-white">
-      <h1>EcoStay</h1>
+    <nav
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        padding: "20px",
+        background: darkMode ? "#222" : "#4CAF50",
+        color: "white",
+      }}
+    >
+      <h2>EcoStay</h2>
 
-      <ul className="flex gap-4">
-        <li>Home</li>
-        <li>About</li>
-        <li>Booking</li>
-        <li>Contact</li>
-      </ul>
+      <div style={{ display: "flex", gap: "20px" }}>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/components">Components</Link>
+      </div>
 
-      <button>Book Now</button>
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+      >
+        {darkMode ? "☀ Light" : "🌙 Dark"}
+      </button>
     </nav>
   );
 }

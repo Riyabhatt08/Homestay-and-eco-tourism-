@@ -1,11 +1,14 @@
-/**
- * Footer component
- * Displays website footer.
- */
 function Footer() {
   return (
-    <footer className="text-center p-4">
-      © 2026 EcoStay
+    <footer
+      style={{
+        background: "#111827",
+        color: "white",
+        textAlign: "center",
+        padding: "20px",
+      }}
+    >
+      © 2026 Trishul Eco Tourism
     </footer>
   );
 }

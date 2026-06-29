@@ -1,17 +1,15 @@
-function Button({ text }) {
+function Button() {
   return (
     <button
-      onClick={() => alert("Button Clicked!")}
       style={{
-        padding: "10px 20px",
-        background: "green",
-        color: "white",
+        background: "#22c55e",
         border: "none",
-        borderRadius: "8px",
-        cursor: "pointer",
+        padding: "10px 20px",
+        color: "white",
+        borderRadius: "5px",
       }}
     >
-      {text}
+      Click Me
     </button>
   );
 }
